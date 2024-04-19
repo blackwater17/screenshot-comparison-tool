@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #121212;
+    color: #eee;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+.comparison-container {
+    position: relative;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    .group-names-container {
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        font-size: 13px;
+        opacity: .4;
+        height: 30px;
+        width: 100vw;
+        font-family: sans-serif;
+        color: #999;
+        font-weight: bold;
+        padding: 0px 8px;
+    }
+
+    .line-container {
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        row-gap: 0;
+        user-select: none;
+        cursor: e-resize;
+
+        .first-line,
+        .second-line {
+            width: 2px;
+            background-color: #8a8a8a;
+            height: calc(50vh - 16px);
+            margin-left: -16px;
+        }
+
+        .circle {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 2px solid #b4b4b4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            column-gap: 0px;
+            position: relative;
+            margin-left: -16px;
+
+            svg {
+                width: 18px;
+                height: 18px;
+                position: absolute;
+                top: 5px;
+            }
+
+            svg.first {
+                left: 0px;
+            }
+
+            svg.second {
+                right: 0px;
+            }
+        }
+    }
+
+}
+
+.infos-container {
+    padding: 24px 24px 120px;
+    box-sizing: border-box;
+}
