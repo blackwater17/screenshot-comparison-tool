@@ -69,7 +69,6 @@ export default function Home() {
                 <div className="absolute top-0 left-0 w-full h-full" >
                     <img
                         className="absolute w-full h-full object-cover"
-                        // src={defaultComparisons[comparisonIndex].left}
                         src={firstImage && secondImage ? firstImage : defaultComparisons[comparisonIndex].left}
                         alt="First image"
                         style={{ clipPath: clipPathStyle }}
@@ -77,7 +76,6 @@ export default function Home() {
 
                     <img
                         className='absolute w-full h-full object-cover'
-                        // src={defaultComparisons[comparisonIndex].right}
                         src={firstImage && secondImage ? secondImage : defaultComparisons[comparisonIndex].right}
                         alt="Second image"
                         style={{ clipPath: clipPathStyleSecond }}
