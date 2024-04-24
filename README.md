@@ -8,7 +8,7 @@ This image comparison tool allows users to upload two images and visually compar
 
 You can directly access this app from the following link: https://blackwater17.github.io/screenshot-comparison-tool/
 
-Or, after downloading the repo, you can try the following steps to run it on your machine: 
+Or, after downloading the repo, you can try the following steps to run it on your machine:
 
 First, run the development server:
 
